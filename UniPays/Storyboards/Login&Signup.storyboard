@@ -460,6 +460,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="aWi-0o-gLO" kind="show" id="TYI-bA-bp0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.60821095680000004" green="0.79299545339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -500,9 +503,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CC-LC-oe6">
-                                <rect key="frame" x="83" y="425" width="248" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CC-LC-oe6">
+                                <rect key="frame" x="83" y="425" width="248" height="63"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
                                 <state key="normal" title="Gallery" image="folder.fill.badge.plus" catalog="system">
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -516,9 +518,8 @@
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT8-8U-qxy">
-                                <rect key="frame" x="83" y="231" width="248" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT8-8U-qxy">
+                                <rect key="frame" x="83" y="231" width="248" height="63"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
                                 <state key="normal" title="Camera" image="camera.fill" catalog="system">
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -529,19 +530,41 @@
                         <color key="backgroundColor" red="0.60821095680000004" green="0.79299545339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="eT8-8U-qxy" firstAttribute="top" secondItem="PNH-np-ptB" secondAttribute="bottom" constant="120" id="2lm-4E-G6B"/>
                             <constraint firstItem="6Uu-Zg-QpZ" firstAttribute="trailing" secondItem="PNH-np-ptB" secondAttribute="trailing" constant="138" id="5GQ-FX-2wq"/>
+                            <constraint firstItem="6Uu-Zg-QpZ" firstAttribute="trailing" secondItem="eT8-8U-qxy" secondAttribute="trailing" constant="83" id="5hb-kx-zq5"/>
                             <constraint firstItem="87I-LZ-hZG" firstAttribute="leading" secondItem="6Uu-Zg-QpZ" secondAttribute="leading" constant="148" id="BTF-Fn-WCD"/>
                             <constraint firstItem="PNH-np-ptB" firstAttribute="top" secondItem="6Uu-Zg-QpZ" secondAttribute="top" constant="25" id="HIw-gX-59L"/>
                             <constraint firstItem="6Uu-Zg-QpZ" firstAttribute="trailing" secondItem="87I-LZ-hZG" secondAttribute="trailing" constant="148" id="Ir6-82-JA9"/>
+                            <constraint firstItem="8CC-LC-oe6" firstAttribute="leading" secondItem="6Uu-Zg-QpZ" secondAttribute="leading" constant="83" id="Q2D-CI-xaN"/>
+                            <constraint firstItem="6Uu-Zg-QpZ" firstAttribute="trailing" secondItem="8CC-LC-oe6" secondAttribute="trailing" constant="83" id="X1p-OW-yJ4"/>
                             <constraint firstItem="PNH-np-ptB" firstAttribute="leading" secondItem="6Uu-Zg-QpZ" secondAttribute="leading" constant="138" id="XnW-Lj-jOd"/>
+                            <constraint firstItem="8CC-LC-oe6" firstAttribute="top" secondItem="eT8-8U-qxy" secondAttribute="bottom" constant="131" id="aCJ-fx-XUl"/>
                             <constraint firstItem="87I-LZ-hZG" firstAttribute="bottom" secondItem="6Uu-Zg-QpZ" secondAttribute="bottom" id="f58-qx-sBQ"/>
+                            <constraint firstItem="eT8-8U-qxy" firstAttribute="leading" secondItem="6Uu-Zg-QpZ" secondAttribute="leading" constant="83" id="nNs-dw-Fcn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Uu-Zg-QpZ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="l3o-QY-G7y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gqe-wg-Wyw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2182.608695652174" y="75.669642857142847"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E3R-G5-1PM">
+            <objects>
+                <viewController id="9DT-HV-6i6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6mV-wQ-dHb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GOi-uD-tGm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qyc-RL-42i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2917" y="79"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pzm-UZ-v23">
