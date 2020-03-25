@@ -15,6 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="dFY-3M-M1i">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UniPays" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYq-Ko-nKv">
                                 <rect key="frame" x="165" y="144" width="84.5" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -32,7 +35,7 @@
                                         </state>
                                         <connections>
                                             <action selector="studentTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zsU-5p-HO0"/>
-                                            <segue destination="OMR-h7-urU" kind="showDetail" id="osR-aq-rnh"/>
+                                            <segue destination="OMR-h7-urU" kind="show" id="osR-aq-rnh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeZ-Dz-nCf">
@@ -43,6 +46,7 @@
                                         </state>
                                         <connections>
                                             <action selector="buisnessTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCw-k1-5mP"/>
+                                            <segue destination="v2w-TM-1Dv" kind="show" id="ox7-GE-fgn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -53,9 +57,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="dFY-3M-M1i">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -78,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+            <point key="canvasLocation" x="42" y="139"/>
         </scene>
         <!--signup1VC-->
         <scene sceneID="iTI-Ur-kQM">
@@ -89,6 +90,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQJ-lC-JVI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="788" y="139"/>
+        </scene>
+        <!--BuissnessLoginVC-->
+        <scene sceneID="nXm-qm-fDl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login&amp;Signup" referencedIdentifier="BuissnessLoginVC" id="v2w-TM-1Dv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Mji-hS-6Wf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNU-Uy-ES1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816" y="203"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RHO-sg-Rjt">
@@ -223,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6k3-9f-gOw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="803" y="790"/>
+            <point key="canvasLocation" x="1203" y="790"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ezM-qx-zbO">
